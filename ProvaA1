@@ -1,0 +1,26 @@
+package prova;
+
+import java.util.Scanner;
+
+public class QuestaoRefeira {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        int controle = 0;
+        double venceu;
+        String[] fight = new String[]{"CHUNLI ", "ZANGIEF", "BLANKA", "GUILE", "RYU", "DHALSIM"
+        };
+        while (controle < fight.length) {
+            System.out.printf("Adversarios: %s\n ", fight[controle]);
+            controle++;
+        }
+        System.out.println("\nQuantas rodadas você venceu? ");
+         venceu = input.nextDouble();
+        if (venceu < 6) {
+            System.out.println("Insira uma nova ficha");
+        } else {
+            System.out.println("Hora dos bosses");
+        }
+
+    }
+}
